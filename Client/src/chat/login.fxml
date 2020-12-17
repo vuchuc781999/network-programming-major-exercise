@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chat.LoginController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="141.0" layoutY="135.0" prefHeight="167.0" prefWidth="318.0">
+         <children>
+            <HBox alignment="TOP_CENTER" prefHeight="97.0" prefWidth="318.0">
+               <children>
+                  <Label text="Welcome to chat app !!!">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="111.0" prefWidth="318.0" spacing="10.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label text="Username:" />
+                  <TextField fx:id="usernameTextField" prefHeight="25.0" prefWidth="235.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="56.0" prefWidth="318.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onStart" text="Start" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

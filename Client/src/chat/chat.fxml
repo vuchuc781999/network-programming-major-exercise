@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chat.ChatController">
+    <children>
+        <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="3.0">
+            <children>
+                <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="600.0" spacing="3.0">
+                    <children>
+                  <Label prefHeight="17.0" prefWidth="110.0" text="Choose Receiver ID:" />
+                  <ComboBox fx:id="usersComboBox" onAction="#onChoose" prefHeight="25.0" prefWidth="421.0" />
+                  <Button mnemonicParsing="false" onAction="#onRefresh" prefHeight="25.0" prefWidth="57.0" text="Refresh" />
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" prefWidth="600.0">
+                    <children>
+                        <ListView fx:id="messagesListView" onMouseClicked="#onClicked" HBox.hgrow="ALWAYS" />
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="600.0" spacing="3.0">
+                    <children>
+                        <TextField fx:id="inputTextField" HBox.hgrow="ALWAYS" />
+                        <CheckBox fx:id="sendFileCheckBox" mnemonicParsing="false" text="Send File" />
+                        <Button mnemonicParsing="false" onAction="#onSend" text="Send" />
+                    </children>
+                </HBox>
+            </children>
+            <padding>
+                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+            </padding>
+        </VBox>
+    </children>
+</AnchorPane>
